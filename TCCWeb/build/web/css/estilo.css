@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/07/2020, 14:57:42
+    Author     : r_pab
+*/
+
+li{
+    transition: 0.25s;
+    color:white;
+}
+a{
+    transition: 0.25s;
+    color:white;
+}
+p{
+    color:white;    
+}
+a:hover{
+    transition: 0.25s;
+    color: rgb(33, 177, 177);
+    text-decoration:cancel-line-through;
+} 
+#aaa{
+    color: #fff;
+}
+label{
+    transition: 0.25s;
+    color:white;
+}
+button{
+    border-radius: 1%;
+}

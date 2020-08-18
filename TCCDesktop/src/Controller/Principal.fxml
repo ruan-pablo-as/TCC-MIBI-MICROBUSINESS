@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="320" style="-fx-background-color: #17a2b8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerPrincipal">
+    <children>
+        <Button fx:id="login" layoutX="122.0" layoutY="291.0" onAction="#loginUs" style="-fx-background-color: #17a2b8; -fx-border-color: black; -fx-border-radius: 3px;" text="ENTRAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Text layoutX="120.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIBI">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MicroBusiness">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="87.0" fitWidth="95.0" layoutX="117.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/twotone_masks_black_48dp.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="user" alignment="CENTER" layoutX="82.0" layoutY="191.0" prefHeight="30.0" prefWidth="157.0" promptText="Usuario">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="senha" alignment="CENTER" layoutX="82.0" layoutY="245.0" prefHeight="30.0" prefWidth="157.0" promptText="Senha">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="cad" layoutX="108.0" layoutY="334.0" onAction="#RedirectCadastro" style="-fx-background-color: #17a2b8; -fx-border-color: black; -fx-border-radius: 3px;" text="CADASTRAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

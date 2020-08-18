@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="719.0" prefWidth="829.0" style="-fx-background-color: #17a2b8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerTabelaEmpresas">
+   <children>
+      <Text layoutX="68.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIBI">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="68.0" fitWidth="69.0" layoutX="61.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/twotone_masks_black_48dp.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MicroBusiness">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button alignment="TOP_CENTER" layoutX="11.0" layoutY="158.0" prefHeight="427.0" prefWidth="170.0" style="-fx-background-color: #17a2b8; -fx-border-color: black; -fx-border-radius: 3px;" text="DIGITE PARA PESQUISAR" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="empresa" alignment="CENTER" layoutX="16.0" layoutY="210.0" prefHeight="30.0" prefWidth="157.0" promptText="IDEmpresa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nome" alignment="CENTER" layoutX="16.0" layoutY="240.0" prefHeight="30.0" prefWidth="157.0" promptText="Nome Fantasia">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cnpj" alignment="CENTER" layoutX="16.0" layoutY="270.0" prefHeight="30.0" prefWidth="157.0" promptText="CNPJ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" alignment="CENTER" layoutX="16.0" layoutY="300.0" prefHeight="30.0" prefWidth="157.0" promptText="E-mail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fixo" alignment="CENTER" layoutX="16.0" layoutY="330.0" prefHeight="30.0" prefWidth="157.0" promptText="DDD e Telefone Fixo">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="whats" alignment="CENTER" layoutX="16.0" layoutY="360.0" prefHeight="30.0" prefWidth="157.0" promptText="DDD e WhatsApp">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="endereco" alignment="CENTER" layoutX="16.0" layoutY="390.0" prefHeight="30.0" prefWidth="157.0" promptText="Endereço">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="num" alignment="CENTER" layoutX="16.0" layoutY="420.0" prefHeight="30.0" prefWidth="157.0" promptText="Nº">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="complemento" alignment="CENTER" layoutX="16.0" layoutY="450.0" prefHeight="30.0" prefWidth="157.0" promptText="Complemento">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="municipio" alignment="CENTER" layoutX="16.0" layoutY="480.0" prefHeight="30.0" prefWidth="157.0" promptText="IDMunicipio">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="estado" alignment="CENTER" layoutX="16.0" layoutY="510.0" prefHeight="30.0" prefWidth="157.0" promptText="IDEstado">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="usuario" alignment="CENTER" layoutX="16.0" layoutY="540.0" prefHeight="30.0" prefWidth="157.0" promptText="IDUsuario">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="TabelaID" layoutX="195.0" prefHeight="601.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="IDEmpresa" prefWidth="75.0" text="IDEmpresa" />
+          <TableColumn fx:id="NomeFantasia" prefWidth="107.0" text="Nome Fantasia" />
+            <TableColumn fx:id="CNPJ" prefWidth="102.0" text="CNPJ" />
+            <TableColumn fx:id="Email" prefWidth="127.0" text="E-mail" />
+            <TableColumn fx:id="DDDf" prefWidth="33.0" text="DDD" />
+            <TableColumn fx:id="TelefoneFixo" prefWidth="83.0" text="Telefone Fixo" />
+            <TableColumn fx:id="DDDw" prefWidth="32.0" text="DDD" />
+            <TableColumn fx:id="WhatsApp" prefWidth="74.0" text="WhatsApp" />
+            <TableColumn fx:id="Endereco" prefWidth="118.0" text="Endereço" />
+            <TableColumn fx:id="Num" prefWidth="45.0" text="Nº" />
+            <TableColumn fx:id="Complemento" prefWidth="118.0" text="Complemento" />
+            <TableColumn fx:id="IDMunicipio" prefWidth="82.0" text="IDMunicipio" />
+            <TableColumn fx:id="IDEstado" prefWidth="62.0" text="IDEstado" />
+            <TableColumn fx:id="IDUsuario" prefWidth="62.0" text="IDUsuario" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteEmp" layoutX="210.0" layoutY="609.0" mnemonicParsing="false" onAction="#deletarEmpresa" prefHeight="50.0" prefWidth="254.0" style="-fx-background-color: rgb(220, 53, 69); -fx-border-radius: 3px; -fx-border-color: black; -fx-background-radius: 4px;" text="DELETAR EMPRESA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteUsEmp" layoutX="561.0" layoutY="609.0" mnemonicParsing="false" onAction="#deletarUsEmp" prefHeight="50.0" prefWidth="254.0" style="-fx-background-color: rgb(220, 53, 69); -fx-border-radius: 3px; -fx-border-color: black; -fx-background-radius: 4px;" text="DELETAR EMPRESA E USUARIO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="4.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Campos DDD e de contato (Telefone Fixo e Whatsapp) que estiverem com o valor -1, é porque não existem propositalmente" wrappingWidth="184.0791015625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
