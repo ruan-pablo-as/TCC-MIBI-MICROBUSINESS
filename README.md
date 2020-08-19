@@ -5,6 +5,6 @@ A ideia desse projeto foi facilitar com que as pequenas e microempresas fizessem
 Funcionaria como uma "rede social", só que nem tanto assim. A pessoa se cadastra, e nisso ela pode cadastrar também a sua empresa (caso ela tenha e queira adicioná-la) caso contrário essa conta servirá somente para entrar em contato com as empresas cuja a pessoa se interesse pelos produtos ou serviços.
 Para as contas que contém uma empresa cadastrada também, o usuário poderá adicionar produtos e serviços, como se fossem postagens no Facebook. Assim, elas podem ser pesquisadas pelos usuários na tela inicial.
 
-
-# O SGBD usado foi PostgreSQL 9.3
-# Foi usado Java, JSP, JavaScript, HTML5, CSS e o Framework Bootstrap. 
+#Na criação:
+ • O SGBD usado foi PostgreSQL 9.3;
+ • Foi usado Java, JSP, JavaScript, HTML5, CSS e o Framework Bootstrap.
